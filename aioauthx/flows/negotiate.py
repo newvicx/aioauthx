@@ -59,7 +59,7 @@ class NegotiateAuth(Auth):
         self._delegate = delegate
         self._opportunistic_auth = opportunistic_auth
 
-    async def auth_flow(
+    async def flow(
         self,
         request: ClientRequest,
         connection: Connection
